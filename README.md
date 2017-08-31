@@ -1,5 +1,5 @@
 # tremble-engine
-This is a project I worked on during my second year at NHTV. I led the team of 8 people who worked on it. It is supposed to be a multiplayer FPS engine, but unfortunately it turned out more to be a rendering demo than anything else. All rendering work on this engine was done by me.
+This is a project I worked on during my second year at NHTV. I led the team of 8 people who worked on it (all programmers). It is supposed to be a multiplayer FPS engine, but unfortunately it turned out more to be a rendering demo than anything else. All rendering work on this engine was done by me, except for the shadow rendering (which was done by another programmer).
 
 # Compiling tremble
 In order to compile, there are some dependencies that you need to download.
