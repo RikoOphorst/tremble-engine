@@ -1,0 +1,12 @@
+*.sdf
+.vs
+*.VC.db
+*.VC
+*.VC.VC.opendb
+bin
+dependencies
+x64
+*.tlog
+*.log
+*.lastbuildstate
+ipch

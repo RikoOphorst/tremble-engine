@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="core\game_manager.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\win32\window.h">
+      <Filter>core\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="core\utilities\debug.h">
+      <Filter>core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="core\utilities\types.h">
+      <Filter>core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="core\utilities\utilities.h">
+      <Filter>core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\renderer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\direct3d.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\memory_includes.h">
+      <Filter>core\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\memory_test.h">
+      <Filter>core\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="core\utilities\timer.h">
+      <Filter>core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\vertex.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\upload_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\input\input_manager.h">
+      <Filter>core\input</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\frame_resource.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\shader.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\allocators\free_list_allocator.h">
+      <Filter>core\memory\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\allocators\linear_allocator.h">
+      <Filter>core\memory\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\allocators\pool_allocator.h">
+      <Filter>core\memory\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\allocators\proxy_allocator.h">
+      <Filter>core\memory\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\allocators\stack_allocator.h">
+      <Filter>core\memory\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\memory_manager.h">
+      <Filter>core\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="core\memory\allocators\allocator.h">
+      <Filter>core\memory\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\dynamic_descriptor_heap.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\win32\wic_loader.h">
+      <Filter>core\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\constants_helper.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\constants_helper.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\dynamic_upload_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\debug_volume.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\material.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\resources\mesh.h">
+      <Filter>core\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="core\resources\obj_loader.h">
+      <Filter>core\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="core\resources\resource_manager.h">
+      <Filter>core\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="core\resources\tiny_obj_loader.h">
+      <Filter>core\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="core\resources\fbx_loader.h">
+      <Filter>core\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="core\scene_graph\component_manager.h">
+      <Filter>core\scene_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="core\scene_graph\component_vector.h">
+      <Filter>core\scene_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="core\scene_graph\scene_graph.h">
+      <Filter>core\scene_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="core\scene_graph\component.h">
+      <Filter>core\scene_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="components\rendering\light.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="components\rendering\renderable.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="components\rendering\camera.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\constant_buffers.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\descriptor_heap.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\pipeline_state.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\root_signature.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\texture.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\get.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\imat44.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\iscalar.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\ivector3.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\ivector4.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\dxmath\mat44.h">
+      <Filter>core\math\dxmath</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\dxmath\vector3.h">
+      <Filter>core\math\dxmath</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\dxmath\vector4.h">
+      <Filter>core\math\dxmath</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\dxmath\quaternion.h">
+      <Filter>core\math\dxmath</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\dxmath\scalar.h">
+      <Filter>core\math\dxmath</Filter>
+    </ClInclude>
+    <ClInclude Include="core\utilities\octree.h">
+      <Filter>core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="core\input\key.h">
+      <Filter>core\input</Filter>
+    </ClInclude>
+    <ClInclude Include="core\input\mouse.h">
+      <Filter>core\input</Filter>
+    </ClInclude>
+    <ClInclude Include="core\math\math.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\device.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\physics\physics_manager.h">
+      <Filter>core\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="components\physics\rigidbody_dynamic.h">
+      <Filter>core\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\command_queue.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\command_manager.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\command_allocator_pool.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\command_context.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\command_context_manager.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\swap_chain.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\gpu_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\gpu_resource.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\structured_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\byte_address_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\typed_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\pixel_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\color_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\depth_buffer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\compute_context.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\graphics_context.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\buffer_manager.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\graphics.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="components\physics\character_controller.h">
+      <Filter>components\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="components\physics\rigidbody_static.h">
+      <Filter>components\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="components\physics\plane.h">
+      <Filter>components\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config\config_parser.h">
+      <Filter>core\config</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config\resolution.h">
+      <Filter>core\config</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config\config_manager.h">
+      <Filter>core\config</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config\config.h">
+      <Filter>core\config</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config\design\config_design.h">
+      <Filter>core\config\design</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="engine_include.h" />
+    <ClInclude Include="core\utilities\pico_json.h" />
+    <ClInclude Include="core\resources\model_loader.h" />
+    <ClInclude Include="core\resources\model.h">
+      <Filter>core\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\interface_buffers.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\interface_sprite_renderer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\physics\physics_material.h" />
+    <ClInclude Include="core\physics\physics_geometry.h" />
+    <ClInclude Include="core\physics\physics_box_geometry.h" />
+    <ClInclude Include="components\physics\rigidbody.h">
+      <Filter>components\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="core\audio\audio_clip.h" />
+    <ClInclude Include="core\audio\audio_manager.h" />
+    <ClInclude Include="components\audio\audio_listener.h" />
+    <ClInclude Include="components\audio\audio_source.h" />
+    <ClInclude Include="components\rendering\image_component.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_handler.h">
+      <Filter>core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_identifiers.h">
+      <Filter>core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_receiver.h">
+      <Filter>core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\peer.h">
+      <Filter>core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_handlers\connectivity_packet_handler.h">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_handlers\test_packet_handler.h">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_handlers\unknown_packet_handler.h">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_layout_defs.h">
+      <Filter>core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_handlers\ping_packet_handler.h">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="components\rendering\button_component.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\interface_font_renderer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\utilities\json.hpp" />
+    <ClInclude Include="core\resources\scene_loader.h" />
+    <ClInclude Include="core\physics\physics_capsule_geometry.h" />
+    <ClInclude Include="core\physics\physics_sphere_geometry.h" />
+    <ClInclude Include="core\physics\physics_geometry_holder.h" />
+    <ClInclude Include="core\networking\network_manager.h">
+      <Filter>core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="components\rendering\text_component.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\connection_interface.h" />
+    <ClInclude Include="components\physics\physics_static_plane.h" />
+    <ClInclude Include="core\physics\physics_collision_data.h" />
+    <ClInclude Include="core\rendering\shadow_renderer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_factory.h" />
+    <ClInclude Include="components\physics\trigger_collider.h" />
+    <ClInclude Include="core\networking\network_events.h" />
+    <ClInclude Include="core\networking\packet_handlers\serialization_packet_handler.h" />
+    <ClInclude Include="core\networking\packet_handler_includes.h" />
+    <ClInclude Include="core\resources\animation.h" />
+    <ClInclude Include="core\networking\serialization_manager.h" />
+    <ClInclude Include="components\networking\transform_serialization_component.h" />
+    <ClInclude Include="core\networking\serializable.h" />
+    <ClInclude Include="core\utilities\stopwatch.h" />
+    <ClInclude Include="core\networking\recipient_groups.h" />
+    <ClInclude Include="core\networking\serializable_component_types.h" />
+    <ClInclude Include="core\networking\packet_handlers\input_packet_handler.h" />
+    <ClInclude Include="core\physics\physics_triangle_mesh_geometry.h" />
+    <ClInclude Include="components\rendering\particle_system.h">
+      <Filter>components\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rendering\particle_renderer.h">
+      <Filter>core\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="core\networking\packet_handlers\create_object_packet_handler.h" />
+    <ClInclude Include="core\networking\i_network_object_creator.h" />
+    <ClInclude Include="core\networking\peer_factory.h" />
+    <ClInclude Include="core\networking\player_connectivity_data.h" />
+    <ClInclude Include="core\networking\packet_handlers\remove_player_packet_handler.h" />
+    <ClInclude Include="core\networking\packet_handlers\new_player_packet_handler.h" />
+    <ClInclude Include="core\networking\packet_handlers\player_data_packet_handler.h" />
+    <ClInclude Include="core\networking\packet_handlers\host_data_packet_handler.h" />
+    <ClInclude Include="core\networking\game_data_manager.h" />
+    <ClInclude Include="core\networking\packet_handlers\game_data_packet_handler.h" />
+    <ClInclude Include="core\physics\physics_convex_mesh_geometry.h" />
+    <ClInclude Include="components\rendering\skinned_renderable.h" />
+    <ClInclude Include="core\networking\i_network_event_handler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\game_manager.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\win32\window.cc">
+      <Filter>core\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\memory_test.cc">
+      <Filter>core\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="core\utilities\timer.cc">
+      <Filter>core\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="core\input\input_manager.cc">
+      <Filter>core\input</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\renderer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\renderer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\frame_resource.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\shader.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\allocators\free_list_allocator.cc">
+      <Filter>core\memory\allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\allocators\linear_allocator.cc">
+      <Filter>core\memory\allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\allocators\pool_allocator.cc">
+      <Filter>core\memory\allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\allocators\proxy_allocator.cc">
+      <Filter>core\memory\allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\allocators\stack_allocator.cc">
+      <Filter>core\memory\allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="core\memory\memory_manager.cc">
+      <Filter>core\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\dynamic_descriptor_heap.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\utilities\utilities.cc">
+      <Filter>core\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="core\win32\wic_loader.cc">
+      <Filter>core\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\debug_volume.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\resources\mesh.cc">
+      <Filter>core\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="core\resources\obj_loader.cc">
+      <Filter>core\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="core\resources\resource_manager.cc">
+      <Filter>core\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="core\resources\tiny_obj_loader.cc">
+      <Filter>core\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="core\resources\fbx_loader.cc">
+      <Filter>core\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="core\scene_graph\component_vector.cc">
+      <Filter>core\scene_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="core\scene_graph\scene_graph.cc">
+      <Filter>core\scene_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="core\scene_graph\component.cc">
+      <Filter>core\scene_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="core\scene_graph\component_manager.cc">
+      <Filter>core\scene_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="components\rendering\renderable.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="components\rendering\camera.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="components\rendering\light.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\constant_buffers.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\constants_helper.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\descriptor_heap.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\material.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\pipeline_state.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\root_signature.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\texture.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\upload_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\get.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\utilities\octree.cc">
+      <Filter>core\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\device.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\physics\physics_manager.cc">
+      <Filter>core\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="components\physics\rigidbody_dynamic.cc">
+      <Filter>core\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\command_queue.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\command_manager.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\command_allocator_pool.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\command_context.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\command_context_manager.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\swap_chain.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\gpu_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\gpu_resource.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\structured_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\byte_address_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\typed_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\pixel_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\color_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\depth_buffer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\graphics_context.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\compute_context.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\buffer_manager.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\graphics.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="components\physics\character_controller.cc">
+      <Filter>components\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="components\physics\rigidbody_static.cc">
+      <Filter>components\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="core\config\config_parser.cc">
+      <Filter>core\config</Filter>
+    </ClCompile>
+    <ClCompile Include="core\config\config_manager.cc">
+      <Filter>core\config</Filter>
+    </ClCompile>
+    <ClCompile Include="core\config\config_manager_moc.cpp">
+      <Filter>core\config</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cc" />
+    <ClCompile Include="core\resources\model_loader.cc" />
+    <ClCompile Include="core\resources\model.cc">
+      <Filter>core\resources</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\interface_sprite_renderer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\physics\physics_material.cc" />
+    <ClCompile Include="core\physics\physics_box_geometry.cc" />
+    <ClCompile Include="components\physics\rigidbody.cc" />
+    <ClCompile Include="core\audio\audio_clip.cc" />
+    <ClCompile Include="core\audio\audio_manager.cc" />
+    <ClCompile Include="components\audio\audio_listener.cc" />
+    <ClCompile Include="components\audio\audio_source.cc" />
+    <ClCompile Include="components\rendering\image_component.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handler.cc">
+      <Filter>core\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_receiver.cc">
+      <Filter>core\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handler.cc" />
+    <ClCompile Include="core\networking\packet_receiver.cc" />
+    <ClCompile Include="components\rendering\button_component.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\peer.cc">
+      <Filter>core\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\connectivity_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\test_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\unknown_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\ping_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\interface_font_renderer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\peer.cc">
+      <Filter>core\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\connectivity_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\ping_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\unknown_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\test_packet_handler.cc">
+      <Filter>core\networking\packet_handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="core\resources\scene_loader.cc" />
+    <ClCompile Include="core\physics\physics_capsule_geometry.cc" />
+    <ClCompile Include="core\physics\physics_sphere_geometry.cc" />
+    <ClCompile Include="core\physics\physics_geometry.cc" />
+    <ClCompile Include="core\physics\physics_geometry_holder.cc" />
+    <ClCompile Include="core\networking\network_manager.cc">
+      <Filter>core\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="components\rendering\text_component.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="components\physics\physics_static_plane.cc" />
+    <ClCompile Include="core\rendering\shadow_renderer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_factory.cc" />
+    <ClCompile Include="core\networking\packet_handlers\serialization_packet_handler.cc" />
+    <ClCompile Include="core\resources\animation.cc" />
+    <ClCompile Include="core\networking\serialization_manager.cc" />
+    <ClCompile Include="components\networking\transform_serialization_component.cc" />
+    <ClCompile Include="core\networking\serializable.cc" />
+    <ClCompile Include="core\utilities\stopwatch.cc" />
+    <ClCompile Include="core\networking\packet_handlers\input_packet_handler.cc" />
+    <ClCompile Include="components\physics\trigger_collider.cc" />
+    <ClCompile Include="core\physics\physics_triangle_mesh_geometry.cc" />
+    <ClCompile Include="components\rendering\particle_system.cc">
+      <Filter>components\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\rendering\particle_renderer.cc">
+      <Filter>core\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="core\networking\packet_handlers\create_object_packet_handler.cc" />
+    <ClCompile Include="core\networking\peer_factory.cc" />
+    <ClCompile Include="core\networking\player_connectivity_data.cc" />
+    <ClCompile Include="core\networking\packet_handlers\remove_player_packet_handler.cc" />
+    <ClCompile Include="core\networking\packet_handlers\new_player_packet_handler.cc" />
+    <ClCompile Include="core\networking\packet_handlers\player_data_packet_handler.cc" />
+    <ClCompile Include="core\networking\packet_handlers\host_data_packet_handler.cc" />
+    <ClCompile Include="core\networking\game_data_manager.cc" />
+    <ClCompile Include="core\networking\packet_handlers\game_data_packet_handler.cc" />
+    <ClCompile Include="core\physics\physics_convex_mesh_geometry.cc" />
+    <ClCompile Include="components\rendering\skinned_renderable.cc" />
+    <ClCompile Include="core\networking\i_network_event_handler.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{ff3fd5f8-4dda-438d-80c6-d1e590a74ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\rendering">
+      <UniqueIdentifier>{8fb1a3fb-f422-4de1-a0b8-2cf5c0662935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\input">
+      <UniqueIdentifier>{a8140256-5eb3-4a62-bf74-11a583dc65ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\win32">
+      <UniqueIdentifier>{0c54cd50-d195-402e-857c-74b5bdcfa119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\memory">
+      <UniqueIdentifier>{3db9cded-875f-4464-ac10-5aafed469155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\utilities">
+      <UniqueIdentifier>{c69cdb75-dc0d-4ca2-b850-27829ec253e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\memory\allocators">
+      <UniqueIdentifier>{3673148a-a897-4023-9e7e-694b23e58c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\resources">
+      <UniqueIdentifier>{9af394b3-53ef-4a69-8fe1-f01e4f68fbee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\scene_graph">
+      <UniqueIdentifier>{b9d524b1-0215-4281-ba17-c30e35d78904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{0746852e-969b-40de-8401-e6cea4c32e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\rendering">
+      <UniqueIdentifier>{5403abee-ea12-45b6-8851-f955b18f0830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\physics">
+      <UniqueIdentifier>{f1bcf398-4fe7-460e-91b5-5618c1aa0756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\math">
+      <UniqueIdentifier>{abd83a93-ed91-47db-841a-d45bca98b02e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\math\dxmath">
+      <UniqueIdentifier>{24865632-3dd6-4066-bd0b-358f022c4f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\config">
+      <UniqueIdentifier>{8a53ef28-39d3-48c8-8632-6f10ef5ded70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\config\design">
+      <UniqueIdentifier>{e6381eb4-56d8-4b8b-9169-50b7d79bb9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\physics">
+      <UniqueIdentifier>{c46afc07-989e-4825-8819-a78f24d87c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\raycast_shooting">
+      <UniqueIdentifier>{4a1e388b-6b62-4ed6-b7d8-6be9c414df0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{9c8dd8b9-b7c3-4bf8-a20a-528cbde07532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\networking">
+      <UniqueIdentifier>{e721a1c6-10f5-4b7a-b292-e1b9b4d75b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\networking\packet_handlers">
+      <UniqueIdentifier>{3469d711-cdb8-49b9-84cb-3b791e003bbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shaders\default_ps.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\default_vs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\debug_default_vs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\debug_default_ps.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\interface_sprite_ps.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\interface_sprite_vs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\interface_font_ps.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\interface_font_vs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\interface_font_gs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\shadow_ps.hlsl">
+      <Filter>core\rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\shadow_vs.hlsl">
+      <Filter>core\rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\particle_gs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\particle_ps.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\particle_vs.hlsl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="shaders\particle_cs.hlsl" />
+    <FxCompile Include="shaders\shadow_skinned_vs.hlsl" />
+    <FxCompile Include="shaders\default_skinned_vs.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\cbuffers.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lighting.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\lights.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\material.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\vertex_data.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\samplers.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\common_include.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\interface_font_buffers.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\interface_sprite_buffers.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shadow_buffers.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shadow_mapping.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\particle_buffers.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A83F974-A596-4B69-B9A0-73FD305E9794}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)dependencies\assimp2\Debug;$(SolutionDir)dependencies\autodesk_fbx\lib\release;$(SolutionDir)dependencies\physx\lib;$(SolutionDir)dependencies\qt\5.7\msvc2015_64\lib;$(SolutionDir)dependencies\raknet\x64\Debug;$(SolutionDir)dependencies\fmodEx\lib;%(AdditionalLibraryDirectories);$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)dependencies\assimp2\Release;$(SolutionDir)dependencies\autodesk_fbx\lib\release;$(SolutionDir)dependencies\physx\lib;$(SolutionDir)dependencies\qt\5.7\msvc2015_64\lib;$(SolutionDir)dependencies\raknet\x64\Release;$(SolutionDir)dependencies\fmodEx\lib;%(AdditionalLibraryDirectories);$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>engine.lib;networking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;$(SolutionDir)dependencies\autodesk_fbx\include;$(SolutionDir)dependencies\physx\include;$(SolutionDir)dependencies\assimp2\include;$(SolutionDir)dependencies\qt\5.7\msvc2015_64\include;$(SolutionDir)dependencies\raknet\include;$(SolutionDir)dependencies\fmodEx\inc;$(ProjectDir)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)bin\x64\Debug\tremble.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\d3d12.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\dxgi.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\dxguid.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\d3dcompiler.lib;libfbxsdk.lib;PhysX3DEBUG_x64.lib;PhysX3CommonDEBUG_x64.lib;PhysX3CookingDEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysXProfileSDKDEBUG.lib;PhysXVisualDebuggerSDKDEBUG.lib;PhysX3CharacterKinematicDEBUG_x64.lib;Qt5Guid.lib;qtmaind.lib;Qt5Widgetsd.lib;Qt5Cored.lib;assimp-vc140-mt.lib;fmodex64_vc.lib;RakNet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)engine\libraries\autodesk_fbx\libs\$(Configuration);$(SolutionDir)engine\libraries\networking\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <AdditionalOptions>/ignore:4099 /debug:fastlink /incremental %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>engine.lib;networking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;$(SolutionDir)dependencies\autodesk_fbx\include;$(SolutionDir)dependencies\physx\include;$(SolutionDir)dependencies\assimp2\include;$(SolutionDir)dependencies\qt\5.7\msvc2015_64\include;$(SolutionDir)dependencies\raknet\include;$(SolutionDir)dependencies\fmodEx\inc;$(ProjectDir)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)bin\x64\Release\tremble.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\d3d12.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\dxgi.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\um\x64\d3dcompiler.lib;libfbxsdk.lib;PhysX3_x64.lib;PhysX3Common_x64.lib;PhysX3Cooking_x64.lib;PhysX3Extensions.lib;PhysXProfileSDK.lib;PhysX3CharacterKinematic_x64.lib;Qt5Gui.lib;qtmain.lib;Qt5Widgets.lib;Qt5Core.lib;assimp-vc140-mt.lib;fmodex64_vc.lib;RakNet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)engine\libraries\autodesk_fbx\libs\$(Configuration);$(SolutionDir)engine\libraries\networking\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4099  /debug:fastlink /incremental %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="components\base_gun.cc" />
+    <ClCompile Include="components\cube_movement.cc" />
+    <ClCompile Include="components\death_screen.cc" />
+    <ClCompile Include="components\flying.cc" />
+    <ClCompile Include="components\grenade.cpp" />
+    <ClCompile Include="components\line_renderer.cc" />
+    <ClCompile Include="components\pick_up.cc" />
+    <ClCompile Include="components\player.cc" />
+    <ClCompile Include="components\score_system.cc" />
+    <ClCompile Include="components\start_game_listener.cc" />
+    <ClCompile Include="main.cc" />
+    <ClCompile Include="networking\game_packet_defs.cc" />
+    <ClCompile Include="networking\network_event_handler.cc" />
+    <ClCompile Include="networking\network_object_creator.cc" />
+    <ClCompile Include="networking\packet_handlers\create_player_packet_handler.cc" />
+    <ClCompile Include="networking\packet_handlers\player_ready_packet_handler.cc" />
+    <ClCompile Include="networking_demo.cc" />
+    <ClCompile Include="pch.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\ambient_audio.h" />
+    <ClInclude Include="components\base_gun.h" />
+    <ClInclude Include="components\collision_test.h" />
+    <ClInclude Include="components\cube_movement.h" />
+    <ClInclude Include="components\death_box.h" />
+    <ClInclude Include="components\death_screen.h" />
+    <ClInclude Include="components\flying.h" />
+    <ClInclude Include="components\fps_counter.h" />
+    <ClInclude Include="components\grappling_hook.h" />
+    <ClInclude Include="components\grenade.h" />
+    <ClInclude Include="components\invoke_timer.h" />
+    <ClInclude Include="components\jump_pad.h" />
+    <ClInclude Include="components\line_rederer.h" />
+    <ClInclude Include="components\output_position_and_rotation.h" />
+    <ClInclude Include="components\pick_up.h" />
+    <ClInclude Include="components\player.h" />
+    <ClInclude Include="components\rotate.h" />
+    <ClInclude Include="components\score_system.h" />
+    <ClInclude Include="components\shooting_sound.h" />
+    <ClInclude Include="components\start_game_listener.h" />
+    <ClInclude Include="components\tag_component.h" />
+    <ClInclude Include="components\target_dummy.h" />
+    <ClInclude Include="networking\game_packet_identifiers.h" />
+    <ClInclude Include="networking\game_packet_defs.h" />
+    <ClInclude Include="networking\network_event_handler.h" />
+    <ClInclude Include="networking\network_objects.h" />
+    <ClInclude Include="networking\network_object_creator.h" />
+    <ClInclude Include="networking\packet_handlers\create_player_packet_handler.h" />
+    <ClInclude Include="networking\packet_handlers\player_ready_packet_handler.h" />
+    <ClInclude Include="networking_demo.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
